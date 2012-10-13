@@ -12,6 +12,7 @@
     <url>http://games.entitypedia.org/gameframework/</url>
 
     <properties>
+        <jackson.version>2.0.5</jackson.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.source>1.6</project.build.source>
         <project.build.target>1.6</project.build.target>
@@ -64,6 +65,12 @@
 
 
     <dependencies>
+        <!-- jackson JSON dependencies -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
