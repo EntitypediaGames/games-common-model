@@ -5,7 +5,7 @@
     <groupId>org.entitypedia.games</groupId>
     <artifactId>entitypedia-games-common-model</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
 
     <name>Word Games Common Model</name>
     <description>Word Games and Framework common model classes</description>
@@ -31,9 +31,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/word-games-common-model/tags/entitypedia-games-common-model-1.0.0</connection>
-        <developerConnection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/word-games-common-model/tags/entitypedia-games-common-model-1.0.0</developerConnection>
-        <url>https://dev.entitypedia.org/svn/tags/entitypedia-games-common-model-1.0.0</url>
+        <connection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/word-games-common-model/trunk</connection>
+        <developerConnection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/word-games-common-model/trunk</developerConnection>
+        <url>https://dev.entitypedia.org/svn/</url>
     </scm>
 
     <mailingLists>
