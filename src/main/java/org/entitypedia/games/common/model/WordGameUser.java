@@ -65,9 +65,6 @@ public class WordGameUser implements Serializable {
 
     @Override
     public String toString() {
-        return "WordGameUser{" +
-                "id=" + id +
-                ", uid='" + uid + '\'' +
-                '}';
+        return super.toString() + "{" + "uid=" + getUid() + '}';
     }
 }
