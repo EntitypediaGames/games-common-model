@@ -36,7 +36,7 @@ public class ResultsPage<T> extends Page {
         this(pageNo, pageSize);
         this.overallCount = overallCount;
 
-        if (getPagesCount() <= pageNo) {
+        if (getPagesCount() <= pageNo && pageNo != 0) {
             throw new IndexOutOfBoundsException("pageNo is greater than the available number of pages:" + getPagesCount());
         }
     }
