@@ -42,13 +42,13 @@ public class Page {
             pageSize = 20;
         }
         if (pageNo < 0) {
-            throw new IllegalArgumentException("pageNo must be a positive integer.");
+            throw new IllegalArgumentException("pageNo must be a positive integer");
         }
         if (pageSize <= 0) {
-            throw new IllegalArgumentException("pageSize must be a positive integer.");
+            throw new IllegalArgumentException("pageSize must be a positive integer");
         }
         if (100 < pageSize) {
-            throw new IllegalArgumentException("pageSize must be less than 100.");
+            throw new IllegalArgumentException("pageSize must be less than 100");
         }
 
         this.pageNo = pageNo;
