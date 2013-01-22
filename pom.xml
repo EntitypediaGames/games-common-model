@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.entitypedia.games</groupId>
         <artifactId>entitypedia-games-parent</artifactId>
-        <version>3</version>
+        <version>5</version>
     </parent>
 
     <groupId>org.entitypedia.games</groupId>
@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
     <version>1.0.3-SNAPSHOT</version>
 
-    <name>Word Games Common Model</name>
+    <name>Entitypedia Games Common Model</name>
     <description>Word Games and Framework common model classes</description>
     <url>http://games.entitypedia.org/gameframework/</url>
 
@@ -22,6 +22,35 @@
         <developerConnection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/word-games-common-model/trunk</developerConnection>
         <url>https://dev.entitypedia.org/svn/entitypedia/apps/word-games-common-model/</url>
     </scm>
+
+    <repositories>
+        <repository>
+            <id>entitypedia</id>
+            <layout>default</layout>
+            <name>Entitypedia Maven Repository</name>
+            <url>https://dev.entitypedia.org/archiva/repository/internal/</url>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>entitypedia-snapshots</id>
+            <layout>default</layout>
+            <name>Entitypedia Maven Snapshot Repository</name>
+            <url>https://dev.entitypedia.org/archiva/repository/snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <dependencies>
         <!-- jackson JSON dependencies -->
