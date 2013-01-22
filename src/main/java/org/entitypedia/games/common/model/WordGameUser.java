@@ -43,7 +43,7 @@ public class WordGameUser implements Serializable {
         return creationTime;
     }
 
-    private void setCreationTime(Date creationTime) {
+    protected void setCreationTime(Date creationTime) {
         this.creationTime = creationTime;
     }
 
@@ -59,7 +59,7 @@ public class WordGameUser implements Serializable {
         return uid;
     }
 
-    private void setUid(String uid) {
+    protected void setUid(String uid) {
         this.uid = uid;
     }
 
