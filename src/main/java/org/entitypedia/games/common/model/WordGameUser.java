@@ -35,7 +35,7 @@ public class WordGameUser implements Serializable {
         return id;
     }
 
-    private void setId(Long id) {
+    protected void setId(Long id) {
         this.id = id;
     }
 
