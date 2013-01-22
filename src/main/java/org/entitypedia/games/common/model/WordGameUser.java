@@ -1,7 +1,5 @@
 package org.entitypedia.games.common.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import java.io.Serializable;
 import java.util.Date;
 
@@ -18,10 +16,8 @@ public class WordGameUser implements Serializable {
 
     protected Date creationTime = new Date();
 
-    @JsonIgnore
     protected String uid;
 
-    @JsonIgnore
     protected String password;
 
     public WordGameUser() {
