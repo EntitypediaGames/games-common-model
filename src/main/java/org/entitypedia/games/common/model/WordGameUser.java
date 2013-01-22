@@ -18,7 +18,6 @@ public class WordGameUser implements Serializable {
 
     protected Date creationTime = new Date();
 
-    @JsonIgnore
     protected String uid;
 
     @JsonIgnore
