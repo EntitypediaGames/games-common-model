@@ -15,7 +15,7 @@
 
     <name>Entitypedia Games Common Model</name>
     <description>Word Games and Framework common model classes</description>
-    <url>http://games.entitypedia.org/gameframework/</url>
+    <url>http://games.entitypedia.org/</url>
 
     <scm>
         <connection>scm:svn:https://dev.entitypedia.org/svn/entitypedia/apps/word-games-common-model/trunk</connection>
