@@ -16,7 +16,7 @@ public class WordGameUser implements Serializable {
 
     protected Long id;
 
-    protected Date creationTime = new Date();
+    protected Date creationTime;
 
     protected String uid;
 
@@ -42,7 +42,7 @@ public class WordGameUser implements Serializable {
         return creationTime;
     }
 
-    protected void setCreationTime(Date creationTime) {
+    public void setCreationTime(Date creationTime) {
         this.creationTime = creationTime;
     }
 
