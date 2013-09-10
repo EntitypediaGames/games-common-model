@@ -36,7 +36,7 @@ public class ResultsPage<T> extends Page {
         this(pageNo, pageSize);
         this.overallCount = overallCount;
 
-        if (getPagesCount() <= pageNo && pageNo != 0) {
+        if (-1 != overallCount && getPagesCount() <= pageNo && pageNo != 0) {
             throw new IndexOutOfBoundsException("pageNo is greater than the available number of pages:" + getPagesCount());
         }
     }
@@ -46,7 +46,7 @@ public class ResultsPage<T> extends Page {
     }
 
     /**
-     * Overall count of items in the result set.
+     * Overall count of items in the result set.  -1 indicates item count is unknown.
      */
     public long getOverallCount() {
         return overallCount;
@@ -57,10 +57,14 @@ public class ResultsPage<T> extends Page {
     }
 
     /**
-     * Count of pages in the result set.
+     * Count of pages in the result set. -1 indicates page count is unknown.
      */
     public long getPagesCount() {
-        return (long) Math.ceil(overallCount / (double) pageSize);
+        if (-1 == overallCount) {
+            return -1;
+        } else {
+            return (long) Math.ceil(overallCount / (double) pageSize);
+        }
     }
 
     protected void setPagesCount(long pagesCount) {
