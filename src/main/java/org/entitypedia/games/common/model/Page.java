@@ -7,7 +7,7 @@ package org.entitypedia.games.common.model;
  */
 public class Page {
 
-    private static final int DEFAULT_PAGE_SIZE = 9;
+    public static final int DEFAULT_PAGE_SIZE = 9;
 
     /**
      * Page index, 0-based.
@@ -44,7 +44,7 @@ public class Page {
             pageSize = DEFAULT_PAGE_SIZE;
         }
         if (pageNo < 0) {
-            throw new IllegalArgumentException("pageNo must be a positive integer");
+            throw new IllegalArgumentException("pageNo must be non-negative integer");
         }
         if (pageSize <= 0) {
             throw new IllegalArgumentException("pageSize must be a positive integer");
