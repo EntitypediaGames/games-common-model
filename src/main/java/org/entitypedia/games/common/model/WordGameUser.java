@@ -18,6 +18,9 @@ public class WordGameUser implements Serializable {
 
     protected Date creationTime;
 
+    /**
+     * Unique identifier. Random generated sequence of letters and numbers, starts with "p".
+     */
     protected String uid;
 
     @JsonIgnore
