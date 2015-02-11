@@ -5,11 +5,11 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 /**
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
  */
-public class WordGameException extends RuntimeException {
+public class GameException extends RuntimeException {
 
-    private static final ResourceBundle messages = ResourceBundle.getBundle("common-model-exceptions", Locale.getDefault());
+    private static final ResourceBundle messages = ResourceBundle.getBundle("games-common-model-exceptions", Locale.getDefault());
 
     protected Object[] params;
 
@@ -19,7 +19,7 @@ public class WordGameException extends RuntimeException {
      *
      * @param errorDescription the description of the error
      */
-    public WordGameException(String errorDescription) {
+    public GameException(String errorDescription) {
         super(errorDescription);
     }
 
@@ -30,7 +30,7 @@ public class WordGameException extends RuntimeException {
      * @param errorDescription the description of the error
      * @param cause            the cause
      */
-    public WordGameException(String errorDescription, Throwable cause) {
+    public GameException(String errorDescription, Throwable cause) {
         super(errorDescription, cause);
     }
 

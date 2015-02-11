@@ -1,9 +1,9 @@
 package org.entitypedia.games.common.model;
 
 /**
- * Bean used to represent the how a result set page should be retrieved.
+ * Represents a result set page.
  *
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
  */
 public class Page {
 

@@ -9,7 +9,7 @@ import java.util.List;
  * Page with results.
  *
  * @param <T> type of result item
- * @author <a rel="author" href="http://autayeu.com/">Aliaksandr Autayeu</a>
+ * @author <a href="http://autayeu.com/">Aliaksandr Autayeu</a>
  */
 public class ResultsPage<T> extends Page {
 
@@ -47,6 +47,8 @@ public class ResultsPage<T> extends Page {
 
     /**
      * Overall count of items in the result set.  -1 indicates item count is unknown.
+     *
+     * @return overall count of items in the result set; -1 indicates item count is unknown.
      */
     public long getOverallCount() {
         return overallCount;
@@ -58,6 +60,8 @@ public class ResultsPage<T> extends Page {
 
     /**
      * Count of pages in the result set. -1 indicates page count is unknown.
+     *
+     * @return count of pages in the result set; -1 indicates page count is unknown.
      */
     public long getPagesCount() {
         if (-1 == overallCount) {
